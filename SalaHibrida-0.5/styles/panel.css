@@ -1,0 +1,294 @@
+/*caracteristicas generales de la pagina*/
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin: 0%;
+    zoom: 75%;
+}
+::placeholder { color: black; }
+::-webkit-scrollbar {display: none;}
+/*Esto va en la cabeza de la pagina web, osea el logo solamente (por ahora)*/
+header{
+    background-color: #005E90;
+    width: 100%;
+    height: auto;
+    display:flex;
+    align-items:center;
+    justify-content:start;
+}
+img{
+    width: 20%;
+    margin:1ex
+}
+/*Aquí va el centro de la pagina web, osea nuestro titulo y sub titulo*/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+h1{
+    color:#005E90;
+    text-align: center;
+    font-size: 10ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color:#005E90;
+    text-align: center;
+    font-size:5ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color:#005E90;
+    text-align: center;
+    font-size:5ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.h3_cv{
+    color: rgb(255, 255, 255);
+    text-align: start;
+    font-size: 3ex;
+    margin: 1ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color:black;
+    text-align: center;
+    font-size:2ex; 
+    margin: 3ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    border: none;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 3ex;
+    margin: 3ex;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input:hover{
+    cursor:pointer;
+    transition: 1s;
+    background-color: #619dbe;
+}
+.panel_buttom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    background-color:#005E90;
+    border: none;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 6.5ex;
+    margin: 3ex;
+    transition:1s
+}
+button:hover{
+    cursor: pointer;
+    background-color: #5991af;
+    transition:1s
+}
+.panel_buttom_es{
+    background-color: #0e699b;
+    width: 68ex;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3ex;
+}
+/*Formulario de salas*/
+.nombres{
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.listaOK{
+    width: 8%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.listaNOK{
+    width: 8%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+#box{
+    font-size: 2ex;
+    width: 4ex;
+    height: 4ex;
+}
+#box2{
+    font-size: 2ex;
+    width: 93%;
+    height: 4ex;   
+}
+.problemas{
+    width: 32%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.solucion{
+    width: 32%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+#A101{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;
+
+}
+#A112{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+    border-radius: 1ex;
+}
+#BELLOTO{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;   
+}
+#B102{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;    
+    border-radius: 1ex;
+}
+#B103{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;    
+}
+#B105{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;    
+}
+#B201{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;     
+}
+#B202{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;       
+}
+#B203{
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 1ex;   
+}
+/*Aqui va la pagina inferior, podran encontrar el re ajuste del tamaño de las IMGs y ademas, el re ajuste de los Nombres correspondientes*/
+footer{
+    background-color: #619dbe;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.footer_img{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.footer_parrafo{
+    background-color: #619dbe;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+}
+.correo{
+    width: 20%;
+}
+.correo:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
