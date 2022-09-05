@@ -1,0 +1,283 @@
+/*caracteristicas generales de la pagina*/
+body{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin: 0%;
+    zoom: 75%;
+}
+::placeholder { color: black; }
+::-webkit-scrollbar {display: none;}
+/*Esto va en la cabeza de la pagina web, osea el logo solamente (por ahora)*/
+header{
+    background-color: #005E90;
+    width: 100%;
+    height: auto;
+    display:flex;
+    align-items:center;
+    justify-content:start;
+}
+img{
+    width: 20%;
+    margin:1ex
+}
+.img_1{
+    width: 100%;
+    margin:1ex
+}
+.img_2{
+    width: 100%;
+    margin:1ex
+}
+.img_3{
+    width: 100%;
+    margin:1ex
+}
+.img_4{
+    width: 100%;
+    margin:1ex
+}
+.img_5{
+    width: 100%;
+    margin:1ex
+}
+.img_6{
+    width: 100%;
+    margin:1ex
+}
+.img_7{
+    width: 100%;
+    margin:1ex
+}
+.img_8{
+    width: 100%;
+    margin:1ex
+}
+/*Aquí va el centro de la pagina web, osea nuestro titulo y sub titulo*/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+#main_1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_2{
+    background-color: rgb(238 242 245);
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_4{
+    background-color: rgb(238 242 245);
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_6{
+    background-color: rgb(238 242 245);
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_7{
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_8{
+    background-color: rgb(238 242 245);
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_9{
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+#main_10{
+    background-color: rgb(238 242 245);
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column; 
+}
+h1{
+    color:#005E90;
+    text-align: center;
+    font-size: 7ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    color:#005E90;
+    text-align: center;
+    font-size:5ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color:#005E90;
+    text-align: start;
+    font-size:5ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.h3_cv{
+    color: white;
+    text-align: start;
+    font-size: 3ex;
+    margin: 1ex;
+}
+p{
+    color:white;
+    text-align: center;
+    font-size:2ex; 
+    margin: 3ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p_li{
+    color:black;
+    text-align: start;
+    font-size:3ex; 
+    margin: 3ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+ul{
+    width: 100%;
+    height: auto;
+}
+li{
+    color:black;
+    text-align: start;
+    font-size:3ex; 
+    margin: 3ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    border: none;
+    width: auto;
+    height: auto;
+    color: black;
+    font-size: 3ex;
+    margin: 3ex;
+    transition: 1s;
+}
+input:hover{
+    cursor:pointer;
+    transition: 1s;
+    background-color: #619dbe;
+}
+button{
+    width: auto;
+    height: auto;
+    color: #005E90;
+    margin: 3ex;
+    transition: 2s;
+    font-size: 5ex;
+}
+button:hover{
+    cursor:pointer;
+    transition: 2s;
+    background-color: #619dbe;
+}
+.panel_botones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+/*Aqui va la pagina inferior, podran encontrar el re ajuste del tamaño de las IMGs y ademas, el re ajuste de los Nombres correspondientes*/
+footer{
+    background-color: #619dbe;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.footer_img{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.footer_parrafo{
+    background-color: #619dbe;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+}
+.correo{
+    width: 20%;
+}
+.correo:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 1s ease-in-out;
+}
