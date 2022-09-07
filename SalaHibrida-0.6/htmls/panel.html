@@ -16,590 +16,89 @@
     <header>
         <h3 class="h3_cv">Campus Vitacura.</h3>
     </header>
-    <div class="panel_baul_colum">
-        <div class="panel_baul_row">
-            <button onclick="A101B()">⚙️ABRIR A101⚙️</button>
-            <button onclick="A101N()">⚙️CERRAR A101⚙️</button>
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="A112B()">⚙️ABRIR A112⚙️</button>
-            <button onclick="A112N()">⚙️CERRAR A112⚙️</button>        
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="BELLOTOB()">⚙️ABRIR BELLOTO2⚙️</button>
-            <button onclick="BELLOTON()">⚙️Cerrar BELLOTO2⚙️</button>
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B102B()">⚙️ABRIR B102B⚙️</button> 
-            <button onclick="B102N()">⚙️CERRAR B102B⚙️</button> 
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B103B()">⚙️ABRIR B103B⚙️</button>
-            <button onclick="B103N()">⚙️CERRAR B103B⚙️</button>  
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B105B()">⚙️ABRIR B105B⚙️</button>
-            <button onclick="B105N()">⚙️CERRAR B105B⚙️</button>  
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B201B()">⚙️ABRIR B201⚙️</button>
-            <button onclick="B201N()">⚙️CERRAR B201⚙️</button>  
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B202B()">⚙️ABRIR 202B⚙️</button>
-            <button onclick="B202N()">⚙️CERRAR 202B⚙️</button>  
-        </div>
-        <div class="panel_baul_row">
-            <button onclick="B203B()">⚙️ABRIR 203B⚙️</button> 
-            <button onclick="B203N()">⚙️Cerrar 203B⚙️</button>   
-        </div>
-    </div>
     <!--Aqui va el titulo y el boton para ir al panel de salas-->
-    <form action="https://formsubmit.co/bran.hernandez@inacapmail.cl" enctype="multipart/form-data" method="POST">
-        <!--Formulario Sala A101-->
-        <div id="A101">
-            <h1>A101</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
+    <main>
+        <a href="../index.html"><input class="regresar" type="button" value="Cerrar panel ↩️"></a>
+        <form action="https://formsubmit.co/bran.hernandez@inacapmail.cl" enctype="multipart/form-data" method="POST">
+            <div class="baul_tipos_row">
+                <div class="Titulo">
+                    <h2>DEPARTAMENTO DE TECNOLOGÍAS DE LA INFORMACIÓN</h1>
                 </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
+                <div class="Titulo_img">
+                    <img  class="img_form" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_UTFSM.png">
                 </div>
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
+            <div class="baul_tipos_row">
+                <input class="info" type="text" name="Lab/sala" placeholder="Sala/Lab" required>
+                <input class="info" type="datetime-local" name="Fecha" required>
+                <input class="info" type="text" name="Soporte" placeholder="Su nombre" required>
             </div>
-        </div>
-        <!--Formulario Sala A112-->
-        <div id="A112">
-            <h1>A112</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
+            <div class="baul_tipos_row">
+                <div class="name1">
+                    <p class="p_form">Sala Híbrida</p>
                 </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
+                <div class="name2">
+                    <p class="p_form">OK</p>
                 </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
+                <div class="name3">
+                    <p class="p_form">NOK</p>
                 </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
+                <div class="name4">
+                    <p class="p_form">Problem</p>
                 </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
+                <div class="name5">
+                    <p class="p_form">Solution</p>
                 </div>
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
-            </div>
-        </div>
-        <!--Formulario Sala BELLOTO-->
-        <div id="BELLOTO">
-            <h1>BELLOTO 2</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
+            <div class="baul_tipos_row">
+                <div class="name1">
+                    <p class="p_form">Example como llenar los campos FAST:</p>
                 </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
+                <div class="example">
+                    <p class="p_form">control C, TAB y control V, Repite: TAB Control V. (Para llenar rapido)</p>
+                    <p class="p_form">Control C: OK /... /... / sin problema</p>
                 </div>
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
-            </div>
-        <!--Formulario Sala B102-->            
-        </div>
-        <div id="B102">
-            <h1>B102</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
+            <div class="baul_inputs">
+                <div class="baul_tipos_column">
+                    <p class="p_form">Cámara:</p>
+                    <p class="p_form">Micrófono:</p>
+                    <p class="p_form">Consola de audio:</p>
+                    <p class="p_form">KAPTIVO:</p>
+                    <p class="p_form">Zoom:</p>
+                    <p class="p_form">Amplificador de Sonido:</p>
+                    <p class="p_form">Pizarra Interactiva:</p>
                 </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
+                <div class="inputs">
+                    <input type="text" name="Cámara" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="Micrófono" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="Consola de audio" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="KAPTIVO" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="ZOOM" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="AMPLIFICADOR DE SONIDO" placeholder="OK /... /... / sin problema" required>
+                    <input type="text" name="PIZARRA INTERACTIVA" placeholder="OK /... /... / sin problema" required>
                 </div>
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
+            <div class="baul_tipos_row">
+                <h2>¿Deseas comentar algo?</h2>
             </div>
-        </div>
-        <!--Formulario Sala B103-->
-        <div id="B103">
-            <h1>B103</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
-                </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
-                </div>
+            <div class="baul_tipos_row">
+                <textarea name="Comentario" placeholder="OK /... /... / sin problema"></textarea>
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
+            <div class="baul_tipos_row">
+                <h2>¿Deseas adjuntar alguna captura?</h2>
             </div>
-        </div>
-        <!--Formulario Sala B105-->        
-        <div id="B105">
-            <h1>B105</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
-                </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
-                </div>
+            <div class="baul_tipos_row">
+                <input type="file" name="Captura 1" accept="image/png, image/jpeg">
+                <input type="file" name="Captura 2" accept="image/png, image/jpeg">
+                <input type="file" name="Captura 3" accept="image/png, image/jpeg">
             </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
+            <div class="baul_tipos_row">
+                <input type="submit" value="📮 Enviar TODO 📮">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/htmls/gracias.html"> 
             </div>
-        </div>
-        <!--Formulario Sala B201-->
-        <div id="B201">
-            <h1>B201</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
-                </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
-                </div>
-            </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
-            </div>
-        </div>
-        <!--Formulario Sala B202-->
-        <div id="B202">
-            <h1>B202</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
-                </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
-                </div>
-            </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
-            </div>
-        </div>
-        <!--Formulario Sala B203-->
-        <div id="B203">
-            <h1>B203</h1>
-            <div class="mitad_1">
-                <div class="primero">
-                    <h2>Sala Hibrida</h2>
-                    <p>Cámara:</p>
-                    <p>Micrófono:</p>
-                    <p>C. audio:</p>
-                    <p>KAPTIVO:</p>
-                    <p>Zoom:</p>
-                    <p>Ampli.sonido:</p>
-                    <p>P.interactiva:</p>
-                </div>
-                <div class="segundo">
-                    <h2>OK</h2>
-                    <input class="check" type="checkbox" value="OK Cámara">
-                    <input class="check" type="checkbox" value="OK Micrófono">
-                    <input class="check" type="checkbox" value="OK Consola de audio:">
-                    <input class="check" type="checkbox" value="OK KAPTIVO">
-                    <input class="check" type="checkbox" value="OK Zoom">
-                    <input class="check" type="checkbox" value="OK Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK Pizzarra interactiva">
-                </div>
-                <div class="tercero">
-                    <h2>NOK</h2>
-                    <input class="check" type="checkbox" value="OK NO Cámara">
-                    <input class="check" type="checkbox" value="OK NO  Micrófono">
-                    <input class="check" type="checkbox" value="OK NO  Consola de audio:">
-                    <input class="check" type="checkbox" value="OK NO  KAPTIVO">
-                    <input class="check" type="checkbox" value="OK NO  Zoom">
-                    <input class="check" type="checkbox" value="OK NO  Amplificador de sonido">
-                    <input class="check" type="checkbox" value="OK NO  Pizzarra interactiva"> 
-                </div>
-                <div class="cuarto">
-                    <h2>Problemas</h2>
-                    <input type="text" name="Problema cámara">
-                    <input type="text" name="Problema micrófono">
-                    <input type="text" name="Problema Consola de audio">
-                    <input type="text" name="problema kaptivo">
-                    <input type="text" name="problema zoom">
-                    <input type="text" name="problema amplificador de sonido">
-                    <input type="text" name="problema pizarra interactiva">
-                </div>
-                <div class="quintero">
-                    <h2>Solución</h2>
-                    <input type="text" name="Solución cámara">
-                    <input type="text" name="Solución micrófono">
-                    <input type="text" name="Solución Consola de audio">
-                    <input type="text" name="Solución kaptivo">
-                    <input type="text" name="Solución zoom">
-                    <input type="text" name="Solución amplificador de sonido">
-                    <input type="text" name="Solución pizarra interactiva">
-                </div>
-            </div>
-            <div class="mitad_2">
-                <textarea></textarea>
-                <input class="img" type="file" name="attachment" accept="image/png, image/jpeg" >
-            </div>
-        </div>
-        <input class="nombre" type="text" name="Nombre del soporte:" placeholder="Nombre y Apellido">
-        <input class="enviar" type="submit" value="Enviar correo">
-    </form>
-    <a href="../index.html"><input type="button" value="Regresar al inicio ↩️"></a>
+        </form>
+    </main>
     <footer>
         <div class="footer_img">
             <a href="https://www.linkedin.com/in/bran-marcelo-hern%C3%A1ndez-villalobos-2ab428241/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>

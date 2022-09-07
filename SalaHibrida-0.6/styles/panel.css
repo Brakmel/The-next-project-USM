@@ -8,7 +8,7 @@ body{
     margin: 0%;
     zoom: 75%;
 }
-::placeholder { color: black; }
+::placeholder { color: rgb(218, 204, 204); }
 ::-webkit-scrollbar {display: none;}
 /*Esto va en la cabeza de la pagina web, osea el logo solamente (por ahora)*/
 header{
@@ -24,208 +24,39 @@ img{
     margin:1ex
 }
 /*Aquí va el centro de la pagina web, osea nuestro titulo y sub titulo*/
-form{
-    width: 100%;
+.regresar{
+    background-color: #619dbe;
+    width: auto;
     height: auto;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-}
-#A101{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;
-}
-#A112{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;
-}
-#BELLOTO{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;
-}
-#B102{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;
-}
-#B103{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;    
-}
-#B105{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;    
-}
-#B201{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;    
-}
-#B202{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;    
-}
-#B203{
-    background-color: #5394c6;
-    width: 90%;
-    height: auto;
-    margin:10ex;
-    display: none;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 2ex; 
-    margin: 10ex;    
-}
-.mitad_1{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:row;
-    border-radius: 10ex; 
-}
-.mitad_2{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    border-radius: 10ex; 
-}
-.primero{
-    width: 20%;
-    height: 55ex;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-}
-.segundo{
-    width: 10%;
-    height: 55ex;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-}
-.tercero{
-    width: 10%;
-    height: 55ex;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-}
-.cuarto{
-    width: 30%;
-    height: 55ex;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-}
-.quintero{
-    width: 30%;
-    height: 55ex;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
-}
-input{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 95%;
-    height: 4ex;
-    margin: 1ex;
-}
-textarea{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    width: 95%;
-    height: 40ex;
+    font-size: 5ex;
     margin: 3ex;
+    border: none;
+    background-color: #72a4be;
+    transition: 1s;
 }
-.check{
-    width: 5ex;
-    height: 5ex;
-    margin: 1ex;
+.regresar:hover{
+    cursor: pointer;
+    background-color: #005E90;
+    transition: 1s;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
 }
 h1{
     color:#005E90;
     text-align: center;
-    font-size: 10ex;
+    font-size: 5ex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
-    color:#005E90;
-    text-align: center;
-    font-size:2ex;
+    color:#ffffff;
+    text-align: start;
+    font-size:4ex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
@@ -234,28 +65,148 @@ h3{
     font-size:5ex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-.h3_cv{
-    color: rgb(255, 255, 255);
-    text-align: start;
-    font-size: 3ex;
-    margin: 1ex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 p{
     color:white;
     text-align: center;
     font-size:2ex; 
+    margin: 3ex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nombre{
-    width: 50%;
-    height: 5ex;
-    text-align: center;
+/*Aquí esta nuestro formulario*/
+.p_form{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 3.5ex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.enviar{
-    width: 25%;
-    height: 5ex;
+.example{
+    width: 75%;
+}
+textarea{
+    width: 90%;
+    height: 10ex;
+    font-size: 10ex;
+}
+form{
+    background-color: #005E90;
+    width: 92%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10ex;
+    border-radius: 3ex;
+}
+.baul_tipos_row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.img_form{
+    width: 27ex;
+}
+.Titulo{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.Titulo_img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.name1{
+    width: 28%;
+    height: auto;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.name2{
+    width: 15%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.name3{
+    width: 15%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.name4{
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.name5{
+    width: 22%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    width: 29%;
+    text-align: center;
+    color: #000;
+    font-size: 3ex;
+}
+.baul_inputs{
+    background-color: #005E90;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.baul_tipos_column{
+    width: 30%;
+    height: 130ex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputs{
+    width: 80%;
+    height: 130ex;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    width: 90%;
+    height: 5ex;
+    font-size: 4ex;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1ex;  
 }
 /*Aqui va la pagina inferior, podran encontrar el re ajuste del tamaño de las IMGs y ademas, el re ajuste de los Nombres correspondientes*/
 footer{
@@ -287,7 +238,6 @@ footer{
 }
 a{
     text-decoration: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .correo{
     width: 20%;
